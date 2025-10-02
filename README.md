@@ -120,8 +120,4 @@ One for running the frontend (Expo app).
 
 📜 License
 Free to use and modify for academic purposes.
-
-yaml
-Copiar código
-
 ---
