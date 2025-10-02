@@ -12,11 +12,6 @@ It includes a simple **FastAPI backend** that serves quiz questions and a **Reac
 ├── frontend/ # React Native app (Expo)
 └── README.md
 
-yaml
-Copiar código
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
@@ -24,76 +19,76 @@ Copiar código
 ```bash
 git clone https://github.com/your-username/quiz-app.git
 cd quiz-app
+```
 🖥️ Backend Setup (FastAPI)
 Open the backend folder in a new VS Code window:
 
-bash
-Copiar código
+```bash
 cd backend
 code .
+```
 Activate the virtual environment:
 
 On Linux/Mac:
 
-bash
+```bash
 Copiar código
 source venv/bin/activate
+```
 On Windows:
 
-bash
-Copiar código
+```bash
 venv\Scripts\activate
+```
 Install FastAPI and Uvicorn (if not already installed):
 
-bash
-Copiar código
+```bash
 pip install fastapi uvicorn
+```
 Run the backend server:
 
-bash
-Copiar código
+```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
 The backend will now be running at:
 
-arduino
-Copiar código
+```arduino
 http://localhost:8000
+```
 Example endpoint:
 
-bash
-Copiar código
+```bash
 http://localhost:8000/questions
+```
 📱 Frontend Setup (React Native with Expo)
 Open the frontend folder in another VS Code window:
 
-bash
-Copiar código
+```bash
 cd frontend
 code .
+```
 Install dependencies:
 
-bash
-Copiar código
+```bash
 npm install
 Start the app with Expo:
-
-bash
-Copiar código
+```
+```bash
 npx expo start
+```
 Run the app on:
-
 Your physical device (scan the QR code with Expo Go).
 
-iOS Simulator.
+iOS | iOS Simulator.
 
-Android Emulator.
+Android | Android Emulator.
 
 🔄 Connecting Frontend to Backend
 In frontend/App.js, update the backend URL to match your local IP address:
 
-js
-Copiar código
+```js
 axios.get("http://<your-local-ip>:8000/questions")
+```
 On Windows: run ipconfig to check your local IP.
 
 On Mac/Linux: run ifconfig.
